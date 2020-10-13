@@ -1,10 +1,14 @@
+name: create-pull-request workflow
+
 on:
   schedule:
     - cron: '*/10 * * * *'
-name: create-pull-request workflow
+
 jobs:
-  createPullRequest:
+  build:
+    
     runs-on: ubuntu-latest
+
     steps:
       - uses: actions/checkout@v2
       - name: Create report file

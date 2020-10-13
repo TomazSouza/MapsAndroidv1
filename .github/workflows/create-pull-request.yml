@@ -1,6 +1,9 @@
 on:
-  schedule:
-    - cron: '*/15 * * * *'
+ on:
+  push:
+    branches: [ feature/maps-v2-ci ]
+  pull_request:
+    branches: [ main ]
 
 name: create-pull-request workflow
 

@@ -1,5 +1,4 @@
 on:
- on:
   push:
     branches: [ feature/maps-v2-ci ]
   pull_request:

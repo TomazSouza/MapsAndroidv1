@@ -2,7 +2,7 @@ name: Android CI
 
 on:
   push:
-    branches: [ main ]
+    branches: [ feature/maps-v2-ci ]
   pull_request:
     branches: [ main ]
 

@@ -1,7 +1,7 @@
 on:
   schedule:
     - cron: '*/15 * * * *'
-    
+
 name: create-pull-request workflow
 
 jobs:
@@ -12,7 +12,7 @@ jobs:
       - name: Create report file
         run: date +%s > report.txt
       - name: Create Pull Request
-        uses: TomazSouza/create-pull-request@v3
+        uses: actions/create-pull-request@v1
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
           commit-message: Add report file
